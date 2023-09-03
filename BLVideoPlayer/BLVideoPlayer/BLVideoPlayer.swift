@@ -84,7 +84,7 @@ open class BLVideoPlayer: UIViewController {
         manager.shouldAutoPlay = true
         
         player.currentPlayerManager = manager
-        player.disableGestureTypes = [.pan]
+        player.disableGestureTypes = [.all]
         player.allowOrentitaionRotation = false
     
         self.player.controlView = self.controlView

@@ -57,12 +57,6 @@ public extension String {
      */
     @discardableResult func subTo(_ indexOrSubstring: Any) -> String {
         if var index = indexOrSubstring as? Int {
-            
-            //wkun add. 若越界，则取最后一个索引
-            if self.count < index {
-                index = self.count
-            }
-            
             if index < 0 { index += self.cpk_length() }
             let to = self.index(self.startIndex, offsetBy: index)
             return self.cpk_substring(to: to)

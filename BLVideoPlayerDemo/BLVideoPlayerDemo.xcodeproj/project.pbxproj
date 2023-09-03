@@ -21,6 +21,8 @@
 		8173543E2AA4735E00DAA74C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173540E2AA4222300DAA74C /* ViewController.swift */; };
 		817354452AA474A800DAA74C /* BLVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817354432AA4749E00DAA74C /* BLVideoPlayer.framework */; };
 		817354462AA474A800DAA74C /* BLVideoPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 817354432AA4749E00DAA74C /* BLVideoPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		817354F92AA4E14900DAA74C /* Cupcake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817354F42AA4E13300DAA74C /* Cupcake.framework */; };
+		817354FA2AA4E14900DAA74C /* Cupcake.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 817354F42AA4E13300DAA74C /* Cupcake.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				817354462AA474A800DAA74C /* BLVideoPlayer.framework in Embed Frameworks */,
+				817354FA2AA4E14900DAA74C /* Cupcake.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +59,7 @@
 		817354342AA4284A00DAA74C /* c1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c1.jpg; sourceTree = "<group>"; };
 		817354352AA4284A00DAA74C /* c2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c2.jpg; sourceTree = "<group>"; };
 		817354432AA4749E00DAA74C /* BLVideoPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLVideoPlayer.framework; sourceTree = "<group>"; };
+		817354F42AA4E13300DAA74C /* Cupcake.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cupcake.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				817354452AA474A800DAA74C /* BLVideoPlayer.framework in Frameworks */,
+				817354F92AA4E14900DAA74C /* Cupcake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				817354432AA4749E00DAA74C /* BLVideoPlayer.framework */,
+				817354F32AA4E13300DAA74C /* Cupcake */,
 				817354392AA437D500DAA74C /* BLVideoPlayerList */,
 				8173540A2AA4222300DAA74C /* AppDelegate.swift */,
 				8173540C2AA4222300DAA74C /* SceneDelegate.swift */,
@@ -132,6 +138,14 @@
 				817354322AA4283E00DAA74C /* imgs */,
 			);
 			path = BLVideoPlayerList;
+			sourceTree = "<group>";
+		};
+		817354F32AA4E13300DAA74C /* Cupcake */ = {
+			isa = PBXGroup;
+			children = (
+				817354F42AA4E13300DAA74C /* Cupcake.framework */,
+			);
+			path = Cupcake;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +381,8 @@
 					"$(PROJECT_DIR)/BLVideoPlayerListDemo/ThirdParty",
 					"$(PROJECT_DIR)/BLVideoPlayerDemo/ThirdParty",
 					"$(PROJECT_DIR)/BLVideoPlayerDemo",
+					"$(PROJECT_DIR)/BLVideoPlayerDemo/Cupcake",
+					"$(PROJECT_DIR)/BLVideoPlayerDemo/ZFPlayer",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BLVideoPlayerDemo/Info.plist;
@@ -403,6 +419,8 @@
 					"$(PROJECT_DIR)/BLVideoPlayerListDemo/ThirdParty",
 					"$(PROJECT_DIR)/BLVideoPlayerDemo/ThirdParty",
 					"$(PROJECT_DIR)/BLVideoPlayerDemo",
+					"$(PROJECT_DIR)/BLVideoPlayerDemo/Cupcake",
+					"$(PROJECT_DIR)/BLVideoPlayerDemo/ZFPlayer",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BLVideoPlayerDemo/Info.plist;

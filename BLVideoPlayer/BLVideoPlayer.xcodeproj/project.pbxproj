@@ -8,26 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		817352EB2AA35B6C00DAA74C /* BLVideoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 817352EA2AA35B6C00DAA74C /* BLVideoPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		817353672AA35EB000DAA74C /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353532AA35EB000DAA74C /* Label.swift */; };
-		817353682AA35EB000DAA74C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353542AA35EB000DAA74C /* View.swift */; };
-		817353692AA35EB000DAA74C /* AttStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353552AA35EB000DAA74C /* AttStr.swift */; };
-		8173536A2AA35EB000DAA74C /* __Private__Implementations__.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353562AA35EB000DAA74C /* __Private__Implementations__.swift */; };
-		8173536B2AA35EB000DAA74C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353572AA35EB000DAA74C /* Alert.swift */; };
-		8173536C2AA35EB000DAA74C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353582AA35EB000DAA74C /* Styles.swift */; };
-		8173536D2AA35EB000DAA74C /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353592AA35EB000DAA74C /* Stack.swift */; };
-		8173536E2AA35EB000DAA74C /* BarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173535A2AA35EB000DAA74C /* BarButton.swift */; };
-		8173536F2AA35EB000DAA74C /* Str.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173535B2AA35EB000DAA74C /* Str.swift */; };
-		817353702AA35EB000DAA74C /* Cons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173535C2AA35EB000DAA74C /* Cons.swift */; };
-		817353712AA35EB000DAA74C /* CPKStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173535D2AA35EB000DAA74C /* CPKStackView.swift */; };
-		817353722AA35EB000DAA74C /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173535E2AA35EB000DAA74C /* TextField.swift */; };
-		817353732AA35EB000DAA74C /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173535F2AA35EB000DAA74C /* TextView.swift */; };
-		817353742AA35EB000DAA74C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353602AA35EB000DAA74C /* ImageView.swift */; };
-		817353752AA35EB000DAA74C /* StaticTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353612AA35EB000DAA74C /* StaticTable.swift */; };
-		817353762AA35EB000DAA74C /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353622AA35EB000DAA74C /* Font.swift */; };
-		817353772AA35EB000DAA74C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353632AA35EB000DAA74C /* Button.swift */; };
-		817353782AA35EB000DAA74C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353642AA35EB000DAA74C /* Color.swift */; };
-		817353792AA35EB000DAA74C /* Cupcake.h in Headers */ = {isa = PBXBuildFile; fileRef = 817353652AA35EB000DAA74C /* Cupcake.h */; };
-		8173537A2AA35EB000DAA74C /* Img.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353662AA35EB000DAA74C /* Img.swift */; };
 		8173537D2AA35ED100DAA74C /* BLUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173537C2AA35ED100DAA74C /* BLUIButton.swift */; };
 		8173537F2AA35EF300DAA74C /* BLUITheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173537E2AA35EF300DAA74C /* BLUITheme.swift */; };
 		817353812AA35F2400DAA74C /* BLTimerIntervalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817353802AA35F2400DAA74C /* BLTimerIntervalExt.swift */; };
@@ -55,26 +35,6 @@
 		709F8E23B795C045DA3B63CE /* Pods_BLVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		817352E72AA35B6C00DAA74C /* BLVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		817352EA2AA35B6C00DAA74C /* BLVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLVideoPlayer.h; sourceTree = "<group>"; };
-		817353532AA35EB000DAA74C /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
-		817353542AA35EB000DAA74C /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		817353552AA35EB000DAA74C /* AttStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttStr.swift; sourceTree = "<group>"; };
-		817353562AA35EB000DAA74C /* __Private__Implementations__.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = __Private__Implementations__.swift; sourceTree = "<group>"; };
-		817353572AA35EB000DAA74C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		817353582AA35EB000DAA74C /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
-		817353592AA35EB000DAA74C /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		8173535A2AA35EB000DAA74C /* BarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButton.swift; sourceTree = "<group>"; };
-		8173535B2AA35EB000DAA74C /* Str.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Str.swift; sourceTree = "<group>"; };
-		8173535C2AA35EB000DAA74C /* Cons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cons.swift; sourceTree = "<group>"; };
-		8173535D2AA35EB000DAA74C /* CPKStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPKStackView.swift; sourceTree = "<group>"; };
-		8173535E2AA35EB000DAA74C /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		8173535F2AA35EB000DAA74C /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
-		817353602AA35EB000DAA74C /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		817353612AA35EB000DAA74C /* StaticTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTable.swift; sourceTree = "<group>"; };
-		817353622AA35EB000DAA74C /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		817353632AA35EB000DAA74C /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		817353642AA35EB000DAA74C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		817353652AA35EB000DAA74C /* Cupcake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cupcake.h; sourceTree = "<group>"; };
-		817353662AA35EB000DAA74C /* Img.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Img.swift; sourceTree = "<group>"; };
 		8173537C2AA35ED100DAA74C /* BLUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLUIButton.swift; sourceTree = "<group>"; };
 		8173537E2AA35EF300DAA74C /* BLUITheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLUITheme.swift; sourceTree = "<group>"; };
 		817353802AA35F2400DAA74C /* BLTimerIntervalExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLTimerIntervalExt.swift; sourceTree = "<group>"; };
@@ -144,36 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				8173537B2AA35ED100DAA74C /* BLUIView */,
-				817353522AA35EB000DAA74C /* Cupcake */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		817353522AA35EB000DAA74C /* Cupcake */ = {
-			isa = PBXGroup;
-			children = (
-				817353532AA35EB000DAA74C /* Label.swift */,
-				817353542AA35EB000DAA74C /* View.swift */,
-				817353552AA35EB000DAA74C /* AttStr.swift */,
-				817353562AA35EB000DAA74C /* __Private__Implementations__.swift */,
-				817353572AA35EB000DAA74C /* Alert.swift */,
-				817353582AA35EB000DAA74C /* Styles.swift */,
-				817353592AA35EB000DAA74C /* Stack.swift */,
-				8173535A2AA35EB000DAA74C /* BarButton.swift */,
-				8173535B2AA35EB000DAA74C /* Str.swift */,
-				8173535C2AA35EB000DAA74C /* Cons.swift */,
-				8173535D2AA35EB000DAA74C /* CPKStackView.swift */,
-				8173535E2AA35EB000DAA74C /* TextField.swift */,
-				8173535F2AA35EB000DAA74C /* TextView.swift */,
-				817353602AA35EB000DAA74C /* ImageView.swift */,
-				817353612AA35EB000DAA74C /* StaticTable.swift */,
-				817353622AA35EB000DAA74C /* Font.swift */,
-				817353632AA35EB000DAA74C /* Button.swift */,
-				817353642AA35EB000DAA74C /* Color.swift */,
-				817353652AA35EB000DAA74C /* Cupcake.h */,
-				817353662AA35EB000DAA74C /* Img.swift */,
-			);
-			path = Cupcake;
 			sourceTree = "<group>";
 		};
 		8173537B2AA35ED100DAA74C /* BLUIView */ = {
@@ -231,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				817352EB2AA35B6C00DAA74C /* BLVideoPlayer.h in Headers */,
-				817353792AA35EB000DAA74C /* Cupcake.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,31 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				817353A32AA36ADA00DAA74C /* BLVideoPlayer.swift in Sources */,
-				817353762AA35EB000DAA74C /* Font.swift in Sources */,
 				817353812AA35F2400DAA74C /* BLTimerIntervalExt.swift in Sources */,
 				817353842AA365B900DAA74C /* BLPlayerControlView.swift in Sources */,
-				817353682AA35EB000DAA74C /* View.swift in Sources */,
-				8173536E2AA35EB000DAA74C /* BarButton.swift in Sources */,
-				8173536B2AA35EB000DAA74C /* Alert.swift in Sources */,
-				817353782AA35EB000DAA74C /* Color.swift in Sources */,
 				8173537D2AA35ED100DAA74C /* BLUIButton.swift in Sources */,
-				817353752AA35EB000DAA74C /* StaticTable.swift in Sources */,
-				8173537A2AA35EB000DAA74C /* Img.swift in Sources */,
 				817353A52AA36CD400DAA74C /* UIView+GetViewController.swift in Sources */,
-				817353672AA35EB000DAA74C /* Label.swift in Sources */,
-				8173536C2AA35EB000DAA74C /* Styles.swift in Sources */,
-				8173536F2AA35EB000DAA74C /* Str.swift in Sources */,
 				8173537F2AA35EF300DAA74C /* BLUITheme.swift in Sources */,
-				817353692AA35EB000DAA74C /* AttStr.swift in Sources */,
-				817353722AA35EB000DAA74C /* TextField.swift in Sources */,
-				817353742AA35EB000DAA74C /* ImageView.swift in Sources */,
-				817353732AA35EB000DAA74C /* TextView.swift in Sources */,
-				8173536A2AA35EB000DAA74C /* __Private__Implementations__.swift in Sources */,
-				817353702AA35EB000DAA74C /* Cons.swift in Sources */,
 				817353862AA3660900DAA74C /* BLLoadFrameworkImage.swift in Sources */,
-				8173536D2AA35EB000DAA74C /* Stack.swift in Sources */,
-				817353712AA35EB000DAA74C /* CPKStackView.swift in Sources */,
-				817353772AA35EB000DAA74C /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

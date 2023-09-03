@@ -1,18 +1,22 @@
 PODS:
+  - Cupcake (1.3.1)
   - ZFPlayer/AVPlayer (4.1.4):
     - ZFPlayer/Core
   - ZFPlayer/Core (4.1.4)
 
 DEPENDENCIES:
+  - Cupcake
   - ZFPlayer/AVPlayer
 
 SPEC REPOS:
   trunk:
+    - Cupcake
     - ZFPlayer
 
 SPEC CHECKSUMS:
+  Cupcake: d258b6c0c289f7072340990107892aeb20d3fe98
   ZFPlayer: 5cf39e8d9f0c2394a014b0db4767b5b5a6bffe13
 
-PODFILE CHECKSUM: 07af44e289206492111c7f293ce9e05b57effc54
+PODFILE CHECKSUM: 562ad3b6e7f9c277257da603c7d6e8a8472c413e
 
 COCOAPODS: 1.12.1

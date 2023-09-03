@@ -8,13 +8,13 @@
 
 import UIKit
 
-var View: UIView {
+public var View: UIView {
     cpk_swizzleMethodsIfNeed()
     let view = UIView()
     return view
 }
 
-extension UIView {
+public extension UIView {
     
     /**
      * Setting background with Color or Image.

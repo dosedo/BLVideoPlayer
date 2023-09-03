@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		qJi5Cpxumr4MGIU2lwnTBXC27yo=
-		</data>
 		<key>BL_bright.png</key>
 		<data>
 		p7fGYB3YTfJVzzPlmFeLyq+S6CQ=
@@ -58,7 +54,7 @@
 		</data>
 		<key>Headers/BLVideoPlayer-Swift.h</key>
 		<data>
-		FEBjXdOTKdsh7WgGiMhLNRxcbZM=
+		ILca0In4X+rDthmX9EV3oQ5MDc0=
 		</data>
 		<key>Headers/BLVideoPlayer.h</key>
 		<data>
@@ -70,7 +66,7 @@
 		</data>
 		<key>Modules/BLVideoPlayer.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		b2QsoOFw2zbWKlUF4fCVi8hC9os=
+		yLhfFmhpUmM7GDOI00A3f2d5EQ0=
 		</data>
 		<key>Modules/BLVideoPlayer.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -78,11 +74,11 @@
 		</data>
 		<key>Modules/BLVideoPlayer.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		9ZDjwpDpZQvKYp99Y+IwTOtHtaE=
+		7W2ekd4pFIq5D8OAh3sDOQs3x7E=
 		</data>
 		<key>Modules/BLVideoPlayer.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		dAn9zPXps4MeLUj7byXo8HZQliA=
+		jhZhdJ1GGWtqcBKrhbNDc+Yol+g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -179,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4QLKk3Rd9iaYiYjgASXw+9K4kq/ipqAd9MD/p5WKheg=
+			9t0oESnUNGfk3+5nT9CnW3P6N4qsczaqbRyE++izfxE=
 			</data>
 		</dict>
 		<key>Headers/BLVideoPlayer.h</key>
@@ -193,7 +189,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U0TNQ+3IblIhKUgDgNqKM0pcOxhvTgSAXlTkKqPRJ3w=
+			6bwtd/EGCO4iSNno2Y5Q4DOaRaZaNpD+1sOqupQRVpM=
 			</data>
 		</dict>
 		<key>Modules/BLVideoPlayer.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -207,14 +203,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6dCWRc2/NNxYd9YYbtTrgpXUpiIq1oFxyz3izaXb13M=
+			xIgKOy8bNu2OcYnFWXjV0dtObBO2xas0JtFPjr0NccA=
 			</data>
 		</dict>
 		<key>Modules/BLVideoPlayer.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			995215XOz5PTA8AvSZgc/fCbpv7NvDrC5+ku6jNdqC0=
+			Qp2LbWEk6bBWQYcDHTfCQk6Iturno3aYIsCv6txeMmM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,0 +1,11 @@
+framework module Cupcake {
+  umbrella header "Cupcake-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Cupcake.Swift {
+  header "Cupcake-Swift.h"
+  requires objc
+}

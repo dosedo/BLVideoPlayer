@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cupcake
 
 // MARK: - 颜色
 public var Color082A74 = UIColor.hexColor(hex: "#082A74")

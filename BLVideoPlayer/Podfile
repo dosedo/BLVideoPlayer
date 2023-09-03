@@ -3,5 +3,6 @@ use_frameworks!
 
 target 'BLVideoPlayer' do
   pod 'ZFPlayer/AVPlayer'  #4.1.4
+  pod 'Cupcake'
   # 添加其他依赖库
 end

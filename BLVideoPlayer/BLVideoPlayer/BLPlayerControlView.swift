@@ -8,6 +8,7 @@
 import UIKit
 import MediaPlayer
 import ZFPlayer
+import Cupcake
 
 enum BLPlayerControlDragType: Int{
     case notBegin = 0    //未开始
@@ -57,7 +58,7 @@ class BLPlayerControlView: UIView, ZFPlayerMediaControl, UIGestureRecognizerDele
         backBtn.img(bkimg).pin(.wh(50, 50))
         titleL.font(14).color(ColorF)
         moreBtn.font(13).color(ColorF).str("更多")
-        moreBtn.isHidden = true 
+        moreBtn.isHidden = true
         
         let topView = HStack(backBtn,10,titleL,NERSpring,moreBtn,10)
         topView.pin(.h(50.0)).addTo(bgView).makeCons { make in
@@ -72,7 +73,11 @@ class BLPlayerControlView: UIView, ZFPlayerMediaControl, UIGestureRecognizerDele
         sliderView.minimumTrackTintColor = .white
         sliderView.maximumTrackTintColor = .init(white: 0.5, alpha: 0.5)
         sliderView.pin(.h(50),.lowResistance)
-        sliderView.isUserInteractionEnabled = false
+//        sliderView.isUserInteractionEnabled = false
+        sliderView.addTarget(self, action: #selector(handleSliderValueChange), for: .valueChanged)
+        sliderView.addTarget(self, action: #selector(handleSliderEnd), for: .touchUpInside)
+        sliderView.addTarget(self, action: #selector(handleSliderOutEnd), for: .touchUpOutside)
+        sliderView.addTarget(self, action: #selector(handleSliderStart), for: .touchDown)
         
         rateBtn.pin(.wh(50, 45)).font(12).color(ColorF).str("倍速")
         
@@ -228,7 +233,7 @@ class BLPlayerControlView: UIView, ZFPlayerMediaControl, UIGestureRecognizerDele
                     return
                 }
                 
-                let adjustedProgress = oldProgress + Float(dx / size.width * 2.0)
+                let adjustedProgress = oldProgress + Float(dx / size.width / 2.0)
                 self.sliderView.value = max(0.0, min(1.0, adjustedProgress))
                 if let totalTime = self.player?.currentPlayerManager.totalTime {
                     let toSec = totalTime*TimeInterval(sliderView.value)
@@ -334,6 +339,8 @@ class BLPlayerControlView: UIView, ZFPlayerMediaControl, UIGestureRecognizerDele
             didSet{
                 super.isHidden = isHidden
                 
+                return;
+                
                 ///若播放中，则3秒后，自动隐藏控制视图
                 if isHidden == false {
                     DispatchQueue.main.asyncAfter(deadline: .now()+3.0) {
@@ -421,6 +428,49 @@ extension BLPlayerControlView {
             manager.play()
         }
     }
+    
+    @objc func handleSliderStart() {
+        
+        print("开始滑动")
+        
+        self.dragType = .progress
+        
+        BLDragProgressPreviewView.shared.show(inView: self)
+    }
+    
+    @objc func handleSliderEnd(){
+        
+        print("结束滑动")
+        
+        if let totalTime = self.player?.currentPlayerManager.totalTime {
+            weak var ws = self
+            let toSec = totalTime*TimeInterval(sliderView.value)
+            self.player?.seek(toTime: toSec, completionHandler: { finished in
+                ws?.handleSliderOutEnd()
+            })
+        }
+    }
+    
+    @objc func handleSliderOutEnd() {
+        
+        print("截止滑动out")
+        
+        self.dragType = .notBegin
+        
+        BLDragProgressPreviewView.shared.hide()
+    }
+    
+    @objc func handleSliderValueChange() {
+        
+        print("值变化\(sliderView.value)")
+        
+        if let totalTime = self.player?.currentPlayerManager.totalTime {
+            let toSec = totalTime*TimeInterval(sliderView.value)
+            self.timeView.currTimeL.text = toSec.toHourMinSecond()
+        }
+        
+        BLDragProgressPreviewView.shared.updateValue(progress: CGFloat(sliderView.value), manager: self.player?.currentPlayerManager)
+    }
 }
 
 // MARK: - Classes
@@ -469,6 +519,13 @@ class BMTimeSlider: UISlider {
         let newx = rect.origin.x - 10
         let newRect = CGRect(x: newx, y: 0, width: 30, height: 50)
         return newRect
+    }
+    
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let v = super.hitTest(point, with: event)
+        
+        print("hittext:\n\(v)")
+        return v
     }
 }
 
@@ -799,4 +856,3 @@ class BLSelectRateView: UIView,UITableViewDataSource,UITableViewDelegate {
         var isSelected = false
     }
 }
-

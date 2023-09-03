@@ -337,20 +337,7 @@ func cpk_getTopViewController() -> UIViewController? {
         }
     }
     
-    ///wkun modify
-    var window = UIApplication.shared.delegate?.window
-    if window == nil || window! == nil {
-        window = UIApplication.shared.keyWindow
-    }
-    
-    if window == nil || window! == nil{
-        let wins = UIApplication.shared.windows
-        
-        if wins.count > 0 {
-            window = wins[0]
-        }
-    }
-    
+    let window = UIApplication.shared.delegate?.window
     return getTopViewController(root: window??.rootViewController)
 }
 
@@ -788,11 +775,6 @@ extension NSMutableAttributedString {
     }
     
     func cpk_addParagraphAttribute(key: String, value: Any, range: NSRange? = nil) {
-        
-        ///wkun add 当NSMutableAttributedString值是""时，会崩溃。
-        ///所以若长度为0，直接返回
-        if self.length == 0 {return}
-        
         let targetRange = range ?? NSMakeRange(0, self.length)
         var mutableStyle: NSMutableParagraphStyle
         
@@ -985,12 +967,8 @@ extension UILabel {
 
 
 extension UIImageView {
-    
     override func cpk_masksToBoundsIfNeed() {
-//        self.layer.masksToBounds = self.layer.cornerRadius > 0 && self.image != nil
-    
-        //wkun modify, 防止ImageView 未设置图片时，圆角失效
-        self.layer.masksToBounds = self.layer.cornerRadius > 0
+        self.layer.masksToBounds = self.layer.cornerRadius > 0 && self.image != nil
     }
 }
 
