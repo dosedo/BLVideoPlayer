@@ -31,3 +31,9 @@ class ViewController: UIViewController {
 ```
 Please refer to the demo code
 请参考demo代码
+
+# Application screenshots, please refer to the article
+示例截屏，请参考简书文章
+https://www.jianshu.com/p/604f1121a1f1?v=1693732436493
+
+
