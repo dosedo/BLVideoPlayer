@@ -1,0 +1,18 @@
+PODS:
+  - ZFPlayer/AVPlayer (4.1.4):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (4.1.4)
+
+DEPENDENCIES:
+  - ZFPlayer/AVPlayer
+
+SPEC REPOS:
+  trunk:
+    - ZFPlayer
+
+SPEC CHECKSUMS:
+  ZFPlayer: 5cf39e8d9f0c2394a014b0db4767b5b5a6bffe13
+
+PODFILE CHECKSUM: 07af44e289206492111c7f293ce9e05b57effc54
+
+COCOAPODS: 1.12.1

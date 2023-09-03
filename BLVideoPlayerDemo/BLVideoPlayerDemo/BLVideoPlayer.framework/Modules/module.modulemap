@@ -1,0 +1,11 @@
+framework module BLVideoPlayer {
+  umbrella header "BLVideoPlayer.h"
+
+  export *
+  module * { export * }
+}
+
+module BLVideoPlayer.Swift {
+  header "BLVideoPlayer-Swift.h"
+  requires objc
+}

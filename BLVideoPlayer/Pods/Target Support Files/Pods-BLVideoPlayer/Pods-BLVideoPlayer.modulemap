@@ -1,0 +1,6 @@
+framework module Pods_BLVideoPlayer {
+  umbrella header "Pods-BLVideoPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
